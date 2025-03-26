@@ -1,0 +1,113 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.18">
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<ChildItems>
+		<LabelDecoration name="Декорация1" id="1">
+			<ContextMenu name="Декорация1КонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="Декорация1РасширеннаяПодсказка" id="3"/>
+		</LabelDecoration>
+		<PictureDecoration name="ЛогоАвтосервис" id="4">
+			<Title formatted="false">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Лого автосервис</v8:content>
+				</v8:item>
+			</Title>
+			<GroupHorizontalAlign>Center</GroupHorizontalAlign>
+			<Picture>
+				<xr:Ref>CommonPicture.ЛогоАвтосервис</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<ContextMenu name="ЛогоАвтосервисКонтекстноеМеню" id="5"/>
+			<ExtendedTooltip name="ЛогоАвтосервисРасширеннаяПодсказка" id="6"/>
+		</PictureDecoration>
+		<LabelDecoration name="ДекорацияАвтосервис" id="7">
+			<TextColor>style:AccentColor</TextColor>
+			<Font ref="style:NormalTextFont" height="18" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem" scale="100"/>
+			<Title formatted="false">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Автосервис</v8:content>
+				</v8:item>
+			</Title>
+			<GroupHorizontalAlign>Center</GroupHorizontalAlign>
+			<ContextMenu name="ДекорацияАвтосервисКонтекстноеМеню" id="8"/>
+			<ExtendedTooltip name="ДекорацияАвтосервисРасширеннаяПодсказка" id="9"/>
+		</LabelDecoration>
+		<LabelDecoration name="Декорация2" id="10">
+			<ContextMenu name="Декорация2КонтекстноеМеню" id="11"/>
+			<ExtendedTooltip name="Декорация2РасширеннаяПодсказка" id="12"/>
+		</LabelDecoration>
+		<LabelDecoration name="ДекорацияЛогинПользователя" id="13">
+			<TextColor>style:AccentColor</TextColor>
+			<Font ref="style:NormalTextFont" height="10" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem" scale="100"/>
+			<Title formatted="false">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Логин пользователя:</v8:content>
+				</v8:item>
+			</Title>
+			<GroupHorizontalAlign>Center</GroupHorizontalAlign>
+			<ContextMenu name="ДекорацияЛогинПользователяКонтекстноеМеню" id="14"/>
+			<ExtendedTooltip name="ДекорацияЛогинПользователяРасширеннаяПодсказка" id="15"/>
+		</LabelDecoration>
+		<InputField name="Логин" id="16">
+			<DataPath>Логин</DataPath>
+			<TitleLocation>None</TitleLocation>
+			<HorizontalAlign>Center</HorizontalAlign>
+			<GroupHorizontalAlign>Center</GroupHorizontalAlign>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<TextColor>style:AccentColor</TextColor>
+			<Font ref="style:NormalTextFont" height="10" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem" scale="100"/>
+			<ContextMenu name="ЛогинКонтекстноеМеню" id="17"/>
+			<ExtendedTooltip name="ЛогинРасширеннаяПодсказка" id="18"/>
+		</InputField>
+		<Button name="Войти" id="19">
+			<Type>UsualButton</Type>
+			<Height>2</Height>
+			<HorizontalStretch>true</HorizontalStretch>
+			<GroupHorizontalAlign>Center</GroupHorizontalAlign>
+			<CommandName>Form.Command.Войти</CommandName>
+			<TextColor>#FFFFFF</TextColor>
+			<BackColor>style:NavigationColor</BackColor>
+			<BorderColor>style:AccentColor</BorderColor>
+			<Font ref="style:NormalTextFont" height="10" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem" scale="100"/>
+			<Shape>Oval</Shape>
+			<ExtendedTooltip name="ВойтиРасширеннаяПодсказка" id="20"/>
+		</Button>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Логин" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Логин</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>100</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="Войти" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Войти</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Войти</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ВыполнитьАутентификацию</Action>
+		</Command>
+	</Commands>
+</Form>
